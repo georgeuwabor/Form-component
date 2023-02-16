@@ -44,7 +44,9 @@ const Product = () => {
           </div>
           <hr className="hr"></hr>
           <div id="label">
-            <h3 className="title">title</h3>
+            <h3 className="title">
+              title<span style={{ color: "red" }}>*</span>
+            </h3>
           </div>
           <div id="label2">
             <input
@@ -57,7 +59,9 @@ const Product = () => {
             <p style={{ color: "red" }}>{error}</p>
           </div>
           <div id="label">
-            <h3 className="title">description</h3>
+            <h3 className="title">
+              description<span style={{ color: "red" }}>*</span>
+            </h3>
           </div>
           <div id="label2">
             <input
@@ -69,7 +73,9 @@ const Product = () => {
             />
           </div>
           <div id="label">
-            <h3 className="title">price</h3>
+            <h3 className="title">
+              price<span style={{ color: "red" }}>*</span>
+            </h3>
           </div>
           <div id="label2">
             <input
@@ -81,14 +87,16 @@ const Product = () => {
             />
           </div>
           <div id="label">
-            <h3 className="title">image</h3>
+            <h3 className="title">
+              image<span style={{ color: "red" }}>*</span>
+            </h3>
           </div>
           <div id="label2" style={{ marginBottom: "60px" }}>
             <input
               required
               onChange={(e) => setImage(e.target.value)}
               className="input"
-              type="text"
+              type="url"
               placeholder="your image link"
             />
           </div>
